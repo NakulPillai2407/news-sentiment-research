@@ -1,0 +1,17 @@
+{
+  "rows_in_news_universe_csv": 41889,
+  "rows_for_final_50": 25049,
+  "rows_after_filters": 25049,
+  "unique_headlines": 20047,
+  "cache_tag": "intraday_headline_36261f6a",
+  "finbert": {
+    "device": "mps",
+    "texts": 20047,
+    "seconds": 27.1,
+    "texts_per_second": 741.0
+  },
+  "vader_seconds": 2.6,
+  "headline_only": true,
+  "max_tokens": 64,
+  "total_seconds": 35.9
+}

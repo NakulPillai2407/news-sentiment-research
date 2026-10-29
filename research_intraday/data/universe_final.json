@@ -1,0 +1,87 @@
+{
+  "excluded_by_deviation_2": [
+    "FXI",
+    "GOOGL",
+    "VGK"
+  ],
+  "n_accepted": 50,
+  "tickers": [
+    "AMAT",
+    "HD",
+    "GOOG",
+    "AMZN",
+    "TGT",
+    "MCD",
+    "CRWD",
+    "LRCX",
+    "COST",
+    "XOM",
+    "SNOW",
+    "WFC",
+    "PYPL",
+    "MSTR",
+    "MRK",
+    "MS",
+    "GME",
+    "ABBV",
+    "GM",
+    "UAL",
+    "HOOD",
+    "NFLX",
+    "AMD",
+    "C",
+    "PLTR",
+    "DKNG",
+    "AAPL",
+    "NKE",
+    "QCOM",
+    "AVGO",
+    "SPOT",
+    "MRNA",
+    "MU",
+    "DAL",
+    "PFE",
+    "JNJ",
+    "BAC",
+    "WMT",
+    "CMG",
+    "IBM",
+    "WBD",
+    "NVDA",
+    "TTD",
+    "NVO",
+    "DELL",
+    "COIN",
+    "DIS",
+    "DJT",
+    "LULU",
+    "RBLX"
+  ],
+  "skipped": {
+    "BLK": [
+      "sparse bars: median 17.9% of minutes filled (< 25%)"
+    ]
+  },
+  "reserve_used": [
+    "RBLX"
+  ],
+  "rules": {
+    "excluded": [
+      "FXI",
+      "GOOGL",
+      "VGK"
+    ],
+    "window": [
+      "2024-01-01",
+      "2026-09-30"
+    ],
+    "daily_start": "2023-05-01",
+    "feed": "iex",
+    "adjustment": "split",
+    "min_day_share": 0.95,
+    "min_median_fill": 0.25,
+    "edge_days": 5,
+    "min_pre_daily": 120
+  },
+  "n_trading_days": 687
+}
