@@ -1,0 +1,533 @@
+{
+  "window": {
+    "start": "2021-01-01",
+    "end": "2023-12-31",
+    "holdout_start": "2023-01-01",
+    "in_sample_end": "2022-12-31"
+  },
+  "articles_loaded": 28078,
+  "date_only_timestamps": true,
+  "data": {
+    "articles_in_window": 28064,
+    "articles_by_period": {
+      "in_sample": 16973,
+      "out_of_sample": 11091,
+      "outside": 14
+    },
+    "stock_days": 15579,
+    "stock_days_by_period": {
+      "in_sample": 9779,
+      "out_of_sample": 5800
+    },
+    "tickers_with_news": 50,
+    "tickers_total": 50,
+    "median_articles_per_stock_day": 1.0,
+    "finbert_describe": {
+      "count": 15579.0,
+      "mean": 0.0789,
+      "std": 0.3794,
+      "min": -0.9667,
+      "25%": -0.0959,
+      "50%": 0.0754,
+      "75%": 0.3395,
+      "max": 0.9397
+    },
+    "vader_describe": {
+      "count": 15579.0,
+      "mean": 0.319,
+      "std": 0.2385,
+      "min": -0.8722,
+      "25%": 0.1909,
+      "50%": 0.3458,
+      "75%": 0.4674,
+      "max": 0.9145
+    },
+    "finbert_vader_corr": 0.37273562292502854,
+    "sign_agreement_nonneutral": 0.7107883140199118,
+    "share_stock_days_above_threshold": 0.1810770909557738
+  },
+  "event_study": {
+    "finbert_in_sample": {
+      "ar0": {
+        "n": 9779,
+        "coef": 11.258145584607364,
+        "se": 9.547364382268183,
+        "t": 1.1791888456165478,
+        "p": 0.23832298670484342,
+        "ci_lo": -7.454344751918777,
+        "ci_hi": 29.970635921133507,
+        "r2": 0.0002436191716945757
+      },
+      "ar1": {
+        "n": 9779,
+        "coef": -1.2175629520461868,
+        "se": 4.91909905044473,
+        "t": -0.24751747008145897,
+        "p": 0.8045077728760816,
+        "ci_lo": -10.858819927303037,
+        "ci_hi": 8.423694023210663,
+        "r2": 3.0205284805573385e-06
+      },
+      "car_trade": {
+        "n": 9779,
+        "coef": -18.191540557121925,
+        "se": 13.570697726834577,
+        "t": -1.3405014925024918,
+        "p": 0.18008235942212203,
+        "ci_lo": -44.78961934679728,
+        "ci_hi": 8.406538232553427,
+        "r2": 0.00022860140916791671
+      }
+    },
+    "finbert_out_of_sample": {
+      "ar0": {
+        "n": 5800,
+        "coef": 14.883898083344008,
+        "se": 9.452683635179179,
+        "t": 1.5745685201980082,
+        "p": 0.11535607388503193,
+        "ci_lo": -3.6430213988583375,
+        "ci_hi": 33.41081756554635,
+        "r2": 0.0004148909276143753
+      },
+      "ar1": {
+        "n": 5800,
+        "coef": 6.140437629751882,
+        "se": 9.292781126618896,
+        "t": 0.6607750194570687,
+        "p": 0.508756605189583,
+        "ci_lo": -12.073078694634702,
+        "ci_hi": 24.35395395413847,
+        "r2": 7.879637092100822e-05
+      },
+      "car_trade": {
+        "n": 5800,
+        "coef": -21.013452034928477,
+        "se": 15.685501246518426,
+        "t": -1.339673607153144,
+        "p": 0.18035148175016102,
+        "ci_lo": -51.75646955756271,
+        "ci_hi": 9.72956548770576,
+        "r2": 0.00026534293038671386
+      }
+    },
+    "vader_in_sample": {
+      "ar0": {
+        "n": 9779,
+        "coef": 8.813429011217602,
+        "se": 13.292844447763212,
+        "t": 0.6630205480739405,
+        "p": 0.507317394042744,
+        "ci_lo": -17.240067358491515,
+        "ci_hi": 34.86692538092672,
+        "r2": 5.807732966500723e-05
+      },
+      "ar1": {
+        "n": 9779,
+        "coef": -8.846530350288342,
+        "se": 14.126398031006673,
+        "t": -0.6262410510358473,
+        "p": 0.5311568451023478,
+        "ci_lo": -36.53376172233895,
+        "ci_hi": 18.84070102176227,
+        "r2": 6.202761828533188e-05
+      },
+      "car_trade": {
+        "n": 9779,
+        "coef": -2.3820056376357397,
+        "se": 21.756979970845,
+        "t": -0.10948236569724742,
+        "p": 0.9128199078213485,
+        "ci_lo": -45.02490279285126,
+        "ci_hi": 40.26089151757977,
+        "r2": 1.5246304594374038e-06
+      }
+    },
+    "vader_out_of_sample": {
+      "ar0": {
+        "n": 5800,
+        "coef": 23.36297824545998,
+        "se": 13.17251998375462,
+        "t": 1.7736149403662345,
+        "p": 0.07612686469855319,
+        "ci_lo": -2.454686508333211,
+        "ci_hi": 49.18064299925317,
+        "r2": 0.0004190668832143585
+      },
+      "ar1": {
+        "n": 5800,
+        "coef": -18.987542163795347,
+        "se": 11.38924910347692,
+        "t": -1.6671460946445373,
+        "p": 0.09548535840037217,
+        "ci_lo": -41.31006021756521,
+        "ci_hi": 3.334975889974519,
+        "r2": 0.0003088669497799401
+      },
+      "car_trade": {
+        "n": 5800,
+        "coef": -12.573571487641296,
+        "se": 19.50131249309461,
+        "t": -0.6447551410754319,
+        "p": 0.5190858764583303,
+        "ci_lo": -50.795441625367744,
+        "ci_hi": 25.648298650085152,
+        "r2": 3.894542032722992e-05
+      }
+    }
+  },
+  "profile": {
+    "finbert_in_sample": {
+      "day 0": 9.0083127141736,
+      "day 1": -1.1427716238001624,
+      "day 2": 2.9316469292099234,
+      "day 3": -0.2985371185780825,
+      "day 4": -0.14746047356354663,
+      "n_events": 1958
+    },
+    "finbert_out_of_sample": {
+      "day 0": 5.517481623391868,
+      "day 1": 8.714582723420737,
+      "day 2": 11.566181419905316,
+      "day 3": -10.10959197729573,
+      "day 4": -14.381261294805242,
+      "n_events": 863
+    },
+    "vader_in_sample": {
+      "day 0": 1.2073159624125953,
+      "day 1": -0.20081661266722528,
+      "day 2": 10.022871546699136,
+      "day 3": 1.3443737836392358,
+      "day 4": -3.279625330732359,
+      "n_events": 1967
+    },
+    "vader_out_of_sample": {
+      "day 0": 4.121368611891547,
+      "day 1": -5.101134071614593,
+      "day 2": -5.957243352744602,
+      "day 3": -0.007450680815092173,
+      "day 4": -21.214162838376684,
+      "n_events": 1135
+    }
+  },
+  "main": {
+    "in_sample": {
+      "metrics": {
+        "Strategy (with costs)": {
+          "cumulative_return": -0.3684081869048992,
+          "annualised_return": -0.2056354171417929,
+          "sharpe": -1.352106103574044,
+          "max_drawdown": -0.46865047314836095,
+          "sortino": -1.824540178054153,
+          "win_rate": 0.4750499001996008,
+          "days_invested": 0.9960238568588469
+        },
+        "Strategy (no costs)": {
+          "cumulative_return": -0.25312173634616675,
+          "annualised_return": -0.13602949583848734,
+          "sharpe": -0.8301272289392235,
+          "max_drawdown": -0.3914337710291298,
+          "sortino": -1.1181668356119994,
+          "win_rate": 0.49101796407185627,
+          "days_invested": 0.9960238568588469
+        },
+        "Equal-weight stocks": {
+          "cumulative_return": 0.13558586800746086,
+          "annualised_return": 0.06577340861093584,
+          "sharpe": 0.391916031829664,
+          "max_drawdown": -0.2103509190493189,
+          "sortino": 0.6061061989953278,
+          "win_rate": 0.510934393638171,
+          "days_invested": 1.0
+        },
+        "S&P 500": {
+          "cumulative_return": 0.02221202749741935,
+          "annualised_return": 0.011067096889723738,
+          "sharpe": 0.15378129584941777,
+          "max_drawdown": -0.2542509661923035,
+          "sortino": 0.2221100585379421,
+          "win_rate": 0.4990059642147117,
+          "days_invested": 1.0
+        }
+      },
+      "n_trades": 1945,
+      "n_long": 1258
+    },
+    "out_of_sample": {
+      "metrics": {
+        "Strategy (with costs)": {
+          "cumulative_return": -0.06808769224871947,
+          "annualised_return": -0.0686132659829215,
+          "sharpe": -0.29552150697448987,
+          "max_drawdown": -0.1935437555921773,
+          "sortino": -0.4061213097393988,
+          "win_rate": 0.4672131147540984,
+          "days_invested": 0.976
+        },
+        "Strategy (no costs)": {
+          "cumulative_return": 0.011078320314453993,
+          "annualised_return": 0.011167439918234212,
+          "sharpe": 0.15207316082451527,
+          "max_drawdown": -0.16961579586314213,
+          "sortino": 0.20786930289551084,
+          "win_rate": 0.47950819672131145,
+          "days_invested": 0.976
+        },
+        "Equal-weight stocks": {
+          "cumulative_return": 0.162116463730682,
+          "annualised_return": 0.16351410130149024,
+          "sharpe": 0.9432476447558247,
+          "max_drawdown": -0.17781544706500862,
+          "sortino": 1.6886602594403863,
+          "win_rate": 0.556,
+          "days_invested": 1.0
+        },
+        "S&P 500": {
+          "cumulative_return": 0.24230500797629828,
+          "annualised_return": 0.24446320922694165,
+          "sharpe": 1.73628602791895,
+          "max_drawdown": -0.10276617093291307,
+          "sortino": 2.848372138668292,
+          "win_rate": 0.548,
+          "days_invested": 1.0
+        }
+      },
+      "n_trades": 863,
+      "n_long": 481
+    }
+  },
+  "lookahead_trace": {
+    "ticker": "ABBV",
+    "direction": "long",
+    "first_article_utc": "2021-01-01 00:00:00+00:00",
+    "last_article_utc": "2021-01-01 00:00:00+00:00",
+    "beta_window_ends": "2020-12-31",
+    "event_day": "2021-01-04",
+    "entry_close": "2021-01-05",
+    "first_holding_day": "2021-01-06",
+    "last_holding_day": "2021-01-08"
+  },
+  "sensitivity": {
+    "finbert_0.3": {
+      "in_sample": {
+        "net": {
+          "cumulative_return": -0.3989202016814003,
+          "annualised_return": -0.22509882997260633,
+          "sharpe": -1.9749048282162591,
+          "max_drawdown": -0.4519355108044498,
+          "sortino": -2.7330721227300883,
+          "win_rate": 0.45708582834331335,
+          "days_invested": 0.9960238568588469
+        },
+        "gross": {
+          "cumulative_return": -0.2892345556507552,
+          "annualised_return": -0.15721700669457805,
+          "sharpe": -1.3048496452568064,
+          "max_drawdown": -0.3690307486442538,
+          "sortino": -1.8102913915546082,
+          "win_rate": 0.47704590818363274,
+          "days_invested": 0.9960238568588469
+        },
+        "n_trades": 4595
+      },
+      "out_of_sample": {
+        "net": {
+          "cumulative_return": -0.09631938542246188,
+          "annualised_return": -0.09705128187970058,
+          "sharpe": -0.8863558639021026,
+          "max_drawdown": -0.1642146772286821,
+          "sortino": -1.401280879060131,
+          "win_rate": 0.46153846153846156,
+          "days_invested": 0.988
+        },
+        "gross": {
+          "cumulative_return": -0.018569175306429875,
+          "annualised_return": -0.018716329801231946,
+          "sharpe": -0.11955054055756954,
+          "max_drawdown": -0.10412987026623322,
+          "sortino": -0.1898493470954308,
+          "win_rate": 0.4817813765182186,
+          "days_invested": 0.988
+        },
+        "n_trades": 2200
+      }
+    },
+    "finbert_0.7": {
+      "in_sample": {
+        "net": {
+          "cumulative_return": -0.5334702831742235,
+          "annualised_return": -0.31748765609025054,
+          "sharpe": -1.7423113640819283,
+          "max_drawdown": -0.5906188384720326,
+          "sortino": -2.4792958788711723,
+          "win_rate": 0.454,
+          "days_invested": 0.9940357852882704
+        },
+        "gross": {
+          "cumulative_return": -0.44907853299877354,
+          "annualised_return": -0.25819888544107916,
+          "sharpe": -1.3400411050202816,
+          "max_drawdown": -0.5304769873036007,
+          "sortino": -1.9075085712724462,
+          "win_rate": 0.462,
+          "days_invested": 0.9940357852882704
+        },
+        "n_trades": 979
+      },
+      "out_of_sample": {
+        "net": {
+          "cumulative_return": -0.08975868896693484,
+          "annualised_return": -0.09044326447756301,
+          "sharpe": -0.2595880722680831,
+          "max_drawdown": -0.35267437519782585,
+          "sortino": -0.41743752514842175,
+          "win_rate": 0.46887966804979253,
+          "days_invested": 0.964
+        },
+        "gross": {
+          "cumulative_return": -0.013102184247206439,
+          "annualised_return": -0.013206306540420765,
+          "sharpe": 0.06858189463917785,
+          "max_drawdown": -0.3374056471339696,
+          "sortino": 0.11025184896621258,
+          "win_rate": 0.47717842323651455,
+          "days_invested": 0.964
+        },
+        "n_trades": 381
+      }
+    },
+    "vader_0.5": {
+      "in_sample": {
+        "net": {
+          "cumulative_return": -0.2624938755219768,
+          "annualised_return": -0.14147811609701744,
+          "sharpe": -0.45184051883527165,
+          "max_drawdown": -0.42079958936137196,
+          "sortino": -0.6732870348018751,
+          "win_rate": 0.4930139720558882,
+          "days_invested": 0.9960238568588469
+        },
+        "gross": {
+          "cumulative_return": -0.12801552055858756,
+          "annualised_return": -0.06632605190247365,
+          "sharpe": -0.13112115620353068,
+          "max_drawdown": -0.34738262300621214,
+          "sortino": -0.19602686092324034,
+          "win_rate": 0.500998003992016,
+          "days_invested": 0.9960238568588469
+        },
+        "n_trades": 1953
+      },
+      "out_of_sample": {
+        "net": {
+          "cumulative_return": -0.0992167855962327,
+          "annualised_return": -0.09996945839425853,
+          "sharpe": -0.4003399589426829,
+          "max_drawdown": -0.25190317613549484,
+          "sortino": -0.5764978349816228,
+          "win_rate": 0.4691358024691358,
+          "days_invested": 0.972
+        },
+        "gross": {
+          "cumulative_return": -0.02368100496929626,
+          "annualised_return": -0.02386817398634633,
+          "sharpe": -0.011496808143142164,
+          "max_drawdown": -0.21614400835914205,
+          "sortino": -0.01655169805441188,
+          "win_rate": 0.48559670781893005,
+          "days_invested": 0.972
+        },
+        "n_trades": 1134
+      }
+    }
+  },
+  "timings_seconds": {
+    "align_and_aggregate": 0.032,
+    "abnormal_returns": 0.035,
+    "backtest": 0.015,
+    "one_full_backtest_run": 0.018
+  },
+  "pipeline_log": {
+    "raw_rows": 69529,
+    "columns_used": {
+      "ts": "Date",
+      "title": "Article_title",
+      "ticker": "Stock_symbol",
+      "summary": "Lsa_summary"
+    },
+    "universe_rows_deduped": 37430,
+    "roundups_removed": 0,
+    "articles_in_window": 28078,
+    "tickers_with_news": 50,
+    "tickers_total": 50,
+    "unique_headlines": 24336,
+    "scoring": {
+      "finbert_headlines": {
+        "device": "mps",
+        "texts": 24336,
+        "seconds": 28.6,
+        "texts_per_second": 852.4
+      },
+      "finbert_summaries": {
+        "device": "mps",
+        "texts": 26293,
+        "seconds": 142.7,
+        "texts_per_second": 184.2
+      },
+      "articles_with_summary_averaged": 28078,
+      "headline_only_mode": false
+    },
+    "total_seconds": 197.8
+  },
+  "risk": {
+    "in_sample": {
+      "top5_tickers": {
+        "COP": 82,
+        "CSL": 74,
+        "ABBV": 70,
+        "BYND": 67,
+        "TMUS": 62
+      },
+      "top5_share_of_trades": 0.18251928020565553,
+      "max_open_trades": 30,
+      "median_open_trades_when_invested": 11.0,
+      "worst_day": -0.045218109898277424,
+      "best_day": 0.035648451015390346,
+      "long_share": 0.6467866323907455
+    },
+    "out_of_sample": {
+      "top5_tickers": {
+        "MANU": 32,
+        "UBS": 31,
+        "VIV": 30,
+        "TSN": 25,
+        "BYND": 24
+      },
+      "top5_share_of_trades": 0.1645422943221321,
+      "max_open_trades": 22,
+      "median_open_trades_when_invested": 10.0,
+      "worst_day": -0.07662421354249944,
+      "best_day": 0.06865384028508115,
+      "long_share": 0.5573580533024334
+    }
+  },
+  "decision_rule": {
+    "cond1_in_sample_car_positive_significant": false,
+    "cond2_oos_net_sharpe_beats_equal_weight": false,
+    "hypothesis_supported": false
+  },
+  "validation": {
+    "planted effect": {
+      "car_coef_bps": 58.669010204619944,
+      "car_p": 1.6777166740733663e-41,
+      "day0_p": 0.8168129040669071,
+      "strategy_sharpe": 5.224316370865353
+    },
+    "no effect": {
+      "car_coef_bps": -1.2164119085387883,
+      "car_p": 0.7825534287479321,
+      "day0_p": 0.8332834773127187,
+      "strategy_sharpe": -0.7801854935931546
+    }
+  }
+}
