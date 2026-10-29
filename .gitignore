@@ -1,0 +1,22 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+.claude/
+
+# large or third-party data: recreate with the scripts
+research/data/nasdaq_exteral_data.csv
+research/data/All_external.csv
+research/data/*.csv.gz
+research/data/_score_cache/
+research/data/_superseded_prices/
+research_intraday/data/news_raw.csv
+research_intraday/data/news_universe.csv
+research_intraday/data/_news_state.json
+research_intraday/data/bars/
+research_intraday/data/daily/
+research_intraday/data/scores.csv.gz
+research_intraday/data/_score_cache/
+research_intraday/data/*.tmp
