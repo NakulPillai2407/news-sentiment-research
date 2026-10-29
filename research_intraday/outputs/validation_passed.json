@@ -1,0 +1,6 @@
+{
+ "passed": true,
+ "unit_test_groups": 13,
+ "worlds": 6,
+ "note": "simulated-data validation passed before any real price or return was loaded"
+}

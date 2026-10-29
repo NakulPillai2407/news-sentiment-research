@@ -1,0 +1,297 @@
+{
+  "validation": {
+    "unit_tests": {
+      "entry_and_exit_bar": true,
+      "release_on_the_minute": true,
+      "entry_staleness_boundary": true,
+      "exit_staleness_boundary": true,
+      "truncated_holds": true,
+      "early_close_day": true,
+      "regular_hours_filter_and_dst": true,
+      "one_position_per_stock": true,
+      "costs_and_daily_portfolio": true,
+      "abnormal_return_and_beta_no_lookahead": true,
+      "last_price_fill": true,
+      "future_bars_cannot_change_a_trade": true,
+      "metrics_and_benchmarks": true
+    },
+    "simulated_worlds": {
+      "regular_hours_filter_kept": 3341,
+      "max_abs_beta_error": 0.07477048812655185,
+      "planted_by_horizon": [
+        {
+          "horizon": 5,
+          "true": 5.0,
+          "coef_full_holds": 5.341008449851121,
+          "se": 0.7735982874391447,
+          "within_tolerance": true
+        },
+        {
+          "horizon": 15,
+          "true": 15.0,
+          "coef_full_holds": 16.079399263170348,
+          "se": 1.2258877720604309,
+          "within_tolerance": true
+        },
+        {
+          "horizon": 30,
+          "true": 30.0,
+          "coef_full_holds": 29.036626664238632,
+          "se": 2.203126223413258,
+          "within_tolerance": true
+        },
+        {
+          "horizon": 60,
+          "true": 60.0,
+          "coef_full_holds": 55.06934043251664,
+          "se": 3.15937148193004,
+          "within_tolerance": true
+        },
+        {
+          "horizon": 120,
+          "true": 60.0,
+          "coef_full_holds": 59.72865958026246,
+          "se": 4.326719851755604,
+          "within_tolerance": true
+        },
+        {
+          "horizon": 180,
+          "true": 60.0,
+          "coef_full_holds": 61.95470765800555,
+          "se": 6.062476786558638,
+          "within_tolerance": true
+        },
+        {
+          "horizon": 240,
+          "true": 60.0,
+          "coef_full_holds": 60.81252997937528,
+          "se": 9.491050619335889,
+          "within_tolerance": true
+        },
+        {
+          "horizon": 300,
+          "true": 60.0,
+          "coef_full_holds": 63.029017756079064,
+          "se": 12.575006993038734,
+          "within_tolerance": true
+        }
+      ],
+      "planted_60min": {
+        "coef": 50.812403229418564,
+        "expected_given_truncation": 55.34826220698344,
+        "p_ticker": 1.625267842139158e-82,
+        "coef_full_holds": 55.06934043251664,
+        "se_full_holds": 3.15937148193004
+      },
+      "profile_planted": {
+        "0": 0.0,
+        "5": 4.196133579283134,
+        "15": 13.001663415431947,
+        "30": 23.628440833363396,
+        "60": 44.44051144658394,
+        "120": 48.964497633862706,
+        "240": 54.09988997672498
+      },
+      "planted_strategy": {
+        "sharpe_in_sample": 8.952864748821492,
+        "cumulative_in_sample": 0.8760354779087947,
+        "sharpe_holdout": 5.556600634614219
+      },
+      "null_worlds": [
+        {
+          "world": "no effect, seed 21",
+          "coef_60min": 1.3651061715883448,
+          "p_ticker": 0.6076722939884586,
+          "horizons_p<0.05_of_8": 0,
+          "gross_mean_bps_per_trade": -0.8776864891866487,
+          "net_sharpe_10bps": -4.214990784264143,
+          "net_cum": -0.29053134585629126
+        },
+        {
+          "world": "no effect, seed 22",
+          "coef_60min": 1.904935102117589,
+          "p_ticker": 0.37095590082153185,
+          "horizons_p<0.05_of_8": 1,
+          "gross_mean_bps_per_trade": -2.0533196103614233,
+          "net_sharpe_10bps": -3.355867697723591,
+          "net_cum": -0.21507439287752061
+        },
+        {
+          "world": "no effect, seed 23",
+          "coef_60min": 0.18040384543670288,
+          "p_ticker": 0.9596514776579729,
+          "horizons_p<0.05_of_8": 0,
+          "gross_mean_bps_per_trade": -0.8855235783980647,
+          "net_sharpe_10bps": -3.0275203018416685,
+          "net_cum": -0.21251077664975881
+        },
+        {
+          "world": "no effect, seed 24",
+          "coef_60min": -0.24289075311741026,
+          "p_ticker": 0.8473746903571292,
+          "horizons_p<0.05_of_8": 0,
+          "gross_mean_bps_per_trade": -1.6123647780774555,
+          "net_sharpe_10bps": -4.143025309084158,
+          "net_cum": -0.26949876206550427
+        }
+      ],
+      "leak_world": [
+        {
+          "horizon": 5,
+          "coef": -0.9665560209737535,
+          "se": 0.8113313169401637,
+          "t": -1.1913209816909331
+        },
+        {
+          "horizon": 15,
+          "coef": -0.9914545304032328,
+          "se": 1.5380311697717393,
+          "t": -0.6446257721489322
+        },
+        {
+          "horizon": 30,
+          "coef": -2.3202826478794876,
+          "se": 1.301660295323217,
+          "t": -1.7825562139493047
+        },
+        {
+          "horizon": 60,
+          "coef": -2.1954350815858157,
+          "se": 2.697004216119626,
+          "t": -0.8140273079530244
+        },
+        {
+          "horizon": 120,
+          "coef": -3.7093959405630867,
+          "se": 3.654635563518279,
+          "t": -1.014983813322303
+        },
+        {
+          "horizon": 180,
+          "coef": -1.0266028500638111,
+          "se": 4.545599686171137,
+          "t": -0.22584541555363893
+        },
+        {
+          "horizon": 240,
+          "coef": -1.0866697285364866,
+          "se": 4.887111203272787,
+          "t": -0.22235420544733434
+        },
+        {
+          "horizon": 300,
+          "coef": -1.2717701043337748,
+          "se": 5.038949709417624,
+          "t": -0.2523879335324344
+        }
+      ],
+      "skipped_trades_planted_world": [
+        {
+          "horizon": 5,
+          "period": "all",
+          "signals": 1254,
+          "executed": 1233,
+          "ignored_open_position": 7,
+          "skipped_not_trading_day": 0,
+          "skipped_entry_stale": 11,
+          "skipped_exit_stale": 3,
+          "skipped_no_beta_or_spy": 0,
+          "skipped_total": 14,
+          "skipped_share_of_live_signals": 0.011226944667201283
+        },
+        {
+          "horizon": 15,
+          "period": "all",
+          "signals": 1254,
+          "executed": 1231,
+          "ignored_open_position": 12,
+          "skipped_not_trading_day": 0,
+          "skipped_entry_stale": 11,
+          "skipped_exit_stale": 0,
+          "skipped_no_beta_or_spy": 0,
+          "skipped_total": 11,
+          "skipped_share_of_live_signals": 0.008856682769726247
+        },
+        {
+          "horizon": 30,
+          "period": "all",
+          "signals": 1254,
+          "executed": 1214,
+          "ignored_open_position": 27,
+          "skipped_not_trading_day": 0,
+          "skipped_entry_stale": 11,
+          "skipped_exit_stale": 2,
+          "skipped_no_beta_or_spy": 0,
+          "skipped_total": 13,
+          "skipped_share_of_live_signals": 0.010594947025264874
+        },
+        {
+          "horizon": 60,
+          "period": "all",
+          "signals": 1254,
+          "executed": 1188,
+          "ignored_open_position": 54,
+          "skipped_not_trading_day": 0,
+          "skipped_entry_stale": 11,
+          "skipped_exit_stale": 1,
+          "skipped_no_beta_or_spy": 0,
+          "skipped_total": 12,
+          "skipped_share_of_live_signals": 0.01
+        },
+        {
+          "horizon": 120,
+          "period": "all",
+          "signals": 1254,
+          "executed": 1147,
+          "ignored_open_position": 95,
+          "skipped_not_trading_day": 0,
+          "skipped_entry_stale": 11,
+          "skipped_exit_stale": 1,
+          "skipped_no_beta_or_spy": 0,
+          "skipped_total": 12,
+          "skipped_share_of_live_signals": 0.010353753235547885
+        },
+        {
+          "horizon": 180,
+          "period": "all",
+          "signals": 1254,
+          "executed": 1111,
+          "ignored_open_position": 132,
+          "skipped_not_trading_day": 0,
+          "skipped_entry_stale": 11,
+          "skipped_exit_stale": 0,
+          "skipped_no_beta_or_spy": 0,
+          "skipped_total": 11,
+          "skipped_share_of_live_signals": 0.00980392156862745
+        },
+        {
+          "horizon": 240,
+          "period": "all",
+          "signals": 1254,
+          "executed": 1085,
+          "ignored_open_position": 157,
+          "skipped_not_trading_day": 0,
+          "skipped_entry_stale": 11,
+          "skipped_exit_stale": 1,
+          "skipped_no_beta_or_spy": 0,
+          "skipped_total": 12,
+          "skipped_share_of_live_signals": 0.010938924339106655
+        },
+        {
+          "horizon": 300,
+          "period": "all",
+          "signals": 1254,
+          "executed": 1075,
+          "ignored_open_position": 168,
+          "skipped_not_trading_day": 0,
+          "skipped_entry_stale": 11,
+          "skipped_exit_stale": 0,
+          "skipped_no_beta_or_spy": 0,
+          "skipped_total": 11,
+          "skipped_share_of_live_signals": 0.010128913443830571
+        }
+      ]
+    },
+    "passed": true
+  }
+}
