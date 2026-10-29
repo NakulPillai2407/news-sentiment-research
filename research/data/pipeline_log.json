@@ -1,0 +1,32 @@
+{
+  "raw_rows": 69529,
+  "columns_used": {
+    "ts": "Date",
+    "title": "Article_title",
+    "ticker": "Stock_symbol",
+    "summary": "Lsa_summary"
+  },
+  "universe_rows_deduped": 37430,
+  "roundups_removed": 0,
+  "articles_in_window": 28078,
+  "tickers_with_news": 50,
+  "tickers_total": 50,
+  "unique_headlines": 24336,
+  "scoring": {
+    "finbert_headlines": {
+      "device": "mps",
+      "texts": 24336,
+      "seconds": 28.6,
+      "texts_per_second": 852.4
+    },
+    "finbert_summaries": {
+      "device": "mps",
+      "texts": 26293,
+      "seconds": 142.7,
+      "texts_per_second": 184.2
+    },
+    "articles_with_summary_averaged": 28078,
+    "headline_only_mode": false
+  },
+  "total_seconds": 197.8
+}

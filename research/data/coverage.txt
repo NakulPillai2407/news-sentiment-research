@@ -1,0 +1,112 @@
+Raw rows read: 69,529
+Rows for the 50-stock universe (deduped): 37,430
+Multi-stock roundup articles removed: 0
+Date range for universe: 2020-01-01 00:00:00+00:00 .. 2024-01-09 00:00:00+00:00
+Window: {'start': '2021-01-01', 'end': '2023-12-31', 'holdout_start': '2023-01-01', 'in_sample_end': '2022-12-31'}
+Articles in window: 28,078; with a summary field: 100%
+Tickers with zero articles in window: []
+
+Articles per ticker in window:
+ticker
+R        304
+CFR      306
+ED       310
+SYY      312
+ACLS     316
+BAX      319
+EW       324
+MCO      325
+BEN      331
+XLF      334
+DRI      340
+HSIC     340
+GNRC     345
+UBS      349
+CSL      354
+KEY      354
+AN       365
+CTVA     365
+PSA      366
+Z        367
+CPB      383
+TOL      384
+WDC      395
+CELH     409
+MOS      411
+ALKS     416
+BSX      430
+BLNK     432
+CSX      435
+CLX      451
+VIV      477
+CLF      477
+CDNS     486
+CAG      510
+DOW      512
+HOG      516
+TSN      584
+MANU     584
+BYND     635
+CGC      671
+VLO      694
+DVN      810
+SE       825
+TMUS     876
+SPCE     927
+COP      929
+AMGN    1009
+ABBV    1528
+CRM     1709
+AMD     2447
+
+Tickers covered per month (whole file):
+ts_utc
+2020-01    47
+2020-02    48
+2020-03    48
+2020-04    47
+2020-05    49
+2020-06    47
+2020-07    48
+2020-08    48
+2020-09    43
+2020-10    47
+2020-11    50
+2020-12    45
+2021-01    48
+2021-02    49
+2021-03    48
+2021-04    50
+2021-05    50
+2021-06    50
+2021-07    50
+2021-08    49
+2021-09    50
+2021-10    50
+2021-11    50
+2021-12    50
+2022-01    50
+2022-02    50
+2022-03    49
+2022-04    50
+2022-05    50
+2022-06    50
+2022-07    50
+2022-08    50
+2022-09    50
+2022-10    50
+2022-11    50
+2022-12    50
+2023-01    50
+2023-02    50
+2023-03    50
+2023-04    50
+2023-05    50
+2023-06    50
+2023-07    50
+2023-08    50
+2023-09    49
+2023-10    50
+2023-11    50
+2023-12    43
+Freq: M

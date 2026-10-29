@@ -1,0 +1,1 @@
+{"raw_rows": 69529, "columns": {"ts": "Date", "title": "Article_title", "ticker": "Stock_symbol", "summary": "Lsa_summary"}, "raw_id": {"name": "news_universe_raw.csv.gz", "bytes": 11095211}, "roundups_removed": 0}
